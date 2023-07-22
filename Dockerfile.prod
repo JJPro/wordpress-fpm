@@ -33,7 +33,6 @@ RUN echo 'path: /var/www/html' > /wp-cli.yml
 # MODS #
 ########
 
-COPY conf/php-fpm.conf.prod /usr/local/etc/php-fpm.d/www.conf
 # Give wp-cli write access
 RUN chown www-data:www-data /var/www
 USER www-data

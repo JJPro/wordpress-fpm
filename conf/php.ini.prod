@@ -192,7 +192,7 @@
 
 ; Enable the PHP scripting language engine under Apache.
 ; https://php.net/engine
-engine = On
+engine = Off
 
 ; This directive determines whether or not PHP will recognize code between
 ; <? and ?> tags as PHP source which should be processed as such. It is
@@ -407,7 +407,7 @@ zend.exception_string_param_max_len = 0
 ; threat in any way, but it makes it possible to determine whether you use PHP
 ; on your server or not.
 ; https://php.net/expose-php
-expose_php = On
+expose_php = Off
 
 ;;;;;;;;;;;;;;;;;;;
 ; Resource Limits ;
