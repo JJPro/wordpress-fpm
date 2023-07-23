@@ -1,0 +1,12 @@
+#!/bin/bash
+cd /usr/local/etc/php/conf.d/
+
+if [[ $1 == "enable" ]]; then
+  if [ -f "docker-php-ext-xdebug.ini.bk" ]; then
+    mv docker-php-ext-xdebug.ini.bk docker-php-ext-xdebug.ini
+  fi
+elif [[ $1 == "disable" ]]; then
+  if [ -f "docker-php-ext-xdebug.ini" ]; then
+    mv docker-php-ext-xdebug.ini docker-php-ext-xdebug.ini.bk
+  fi
+fi
